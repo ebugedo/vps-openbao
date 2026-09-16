@@ -73,7 +73,7 @@ jobs:
             docker run -d \
               --name openbao \
               --restart unless-stopped \
-              -p 127.0.0.1:8200:8200 \
+              -p 8200:8200 \
               -v /opt/openbao/data:/openbao/file \
               -v /opt/openbao/logs:/openbao/logs \
               -e BAO_API_ADDR=http://0.0.0.0:8200 \
