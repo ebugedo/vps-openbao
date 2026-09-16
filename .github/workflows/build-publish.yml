@@ -81,4 +81,5 @@ jobs:
               --cap-add IPC_LOCK \
               --memory 512m \
               --network nginx-net \
-              ghcr.io/${{ github.repository }}:latest
+              ghcr.io/${{ github.repository }}:latest \
+              server -config=/openbao/config/config.hcl
