@@ -78,4 +78,4 @@ jobs:
               --cap-add IPC_LOCK \
               --memory 512m \
               --network nginx-net \
-              ghcr.io/ebugedo/openbao:latest
+              ghcr.io/${{ github.repository }}:latest
