@@ -75,7 +75,6 @@ jobs:
               --restart unless-stopped \
               -p 127.0.0.1:8200:8200 \
               -v /opt/openbao/data:/openbao/file \
-              -v /opt/openbao/config:/openbao/config \
               -v /opt/openbao/logs:/openbao/logs \
               -e BAO_API_ADDR=http://0.0.0.0:8200 \
               --cap-drop ALL \
